@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+
 public class content {
     private String chatname;
     private String chatcontent;

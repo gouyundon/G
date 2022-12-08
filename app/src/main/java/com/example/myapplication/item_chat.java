@@ -17,8 +17,10 @@ public class item_chat extends AppCompatActivity {
         ArrayList<content> data=new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             content content=new content();
-            content.setChatname("高数群");
-            content.setChatcontent("考试开始了");
+            for (int j = 0; j < 5; j++) {
+                content.setChatcontent("高数"+j);
+                content.setChatname("马上考试了"+i);
+            }
             data.add(content);
         }
         RecyclerView recycle = (RecyclerView) findViewById(R.id.recycle);
