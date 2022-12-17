@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View_Pager2">
+    tools:context=".View_Pager2"
+    android:orientation="horizontal">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/item_vp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-
+        android:layout_height="50dp"
+        />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/item_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>
